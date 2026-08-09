@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Deepak Adhikari - Technical Team Lead, AI & Full Stack Engineer with 13+ years of experience building enterprise software across AI/Generative AI, backend systems, cloud infrastructure, and SaaS platforms.">
+    <meta name="keywords"
+        content="Deepak Adhikari, Technical Team Lead, AI Engineer, Full Stack Developer, Solution Architect, Python, PHP, Generative AI, RAG, LangChain, OpenAI, Pinecone, Firebase, GCP, Webuters Technologies">
+    <meta name="author" content="Deepak Adhikari">
+    <title>Deepak Adhikari | Technical Team Lead & AI Solutions Architect</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deepakadhikari1989.github.io/portfolio">
+    <meta property="og:title" content="Deepak Adhikari | Technical Team Lead & AI Architect">
+    <meta property="og:description"
+        content="13+ years of experience architecting cloud-native SaaS, Generative AI chatbots, RAG systems, and leading high-performing engineering teams.">
+    <meta property="og:image" content="assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Deepak Adhikari | Technical Team Lead & AI Architect">
+    <meta property="twitter:description"
+        content="13+ years of experience architecting cloud-native SaaS, Generative AI chatbots, RAG systems, and leading high-performing engineering teams.">
+    <meta property="twitter:image" content="assets/og-image.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Custom Cursor Glow effect -->
+    <div id="cursor-glow"></div>
+
+    <!-- Loading Animation Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-bold">DEEPAK</span><span class="logo-light">ADHIKARI</span>
+            </div>
+            <div class="loader-spinner-container">
+                <div class="loader-spinner"></div>
+            </div>
+            <p class="loader-text">Initializing Executive AI Portal...</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo-link">
+                <span class="logo-tag">&lt;</span>
+                <span class="logo-bold">Deepak</span><span class="logo-light">.A</span>
+                <span class="logo-tag">/&gt;</span>
+            </a>
+
+            <!-- Desktop Navbar Menu -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn-primary btn-nav">Let's Connect</a>
+                <!-- Mobile Hamburger Menu Button -->
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <ul class="mobile-nav-menu">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="#contact" class="btn-primary mobile-btn-nav">Let's Connect</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text-content">
+                    <div class="badge-container scroll-reveal-fade">
+                        <span class="badge-icon"><i class="fa-solid fa-bolt"></i></span>
+                        <span class="badge-text">13+ Years IT Industry Influence</span>
+                    </div>
+
+                    <h1 class="hero-title scroll-reveal-fade">
+                        Hi, I'm <span class="highlight-gradient">Deepak Adhikari</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle scroll-reveal-fade">
+                        <span class="typing-prefix">I am a</span> <span id="typing-text"
+                            class="highlight-blue"></span><span class="typing-cursor">|</span>
+                    </h2>
+
+                    <p class="hero-desc scroll-reveal-fade">
+                        Technical Team Lead & Enterprise Solutions Architect. Experienced in leading cross-functional
+                        engineering teams, building Generative AI chatbots & RAG systems, multi-tenant cloud
+                        architectures, and scalable API ecosystems.
+                    </p>
+
+                    <div class="hero-actions scroll-reveal-fade">
+                        <a href="#projects" class="btn-primary"><i class="fa-solid fa-briefcase"></i> View Featured
+                            Work</a>
+                        <a href="Deepak Adhikari-2026.pdf" download class="btn-secondary"><i
+                                class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                        <a href="#contact" class="btn-secondary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+                    </div>
+
+                    <div class="hero-socials scroll-reveal-fade">
+                        <span class="socials-label">Connect:</span>
+                        <a href="https://linkedin.com/in/deepak-adhikari-6816ba249" target="_blank"
+                            rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/deepakadhikari1989" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:deepuadhikari12@gmail.com" class="social-icon" aria-label="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+919899985910" class="social-icon" aria-label="Phone"><i
+                                class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image-content scroll-reveal-fade">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-pulse-ring"></div>
+                        <div class="avatar-card">
+                            <img src="assets/avatar.jpg" alt="Deepak Adhikari" class="avatar-img"
+                                onerror="this.src='Deepak Adhikari.jpg';">
+                        </div>
+
+                        <!-- Floating Tech Icons -->
+                        <div class="floating-tech-icon icon-python" title="Python"><i class="fa-brands fa-python"></i>
+                        </div>
+                        <div class="floating-tech-icon icon-brain" title="AI, LangChain & RAG"><i
+                                class="fa-solid fa-brain"></i></div>
+                        <div class="floating-tech-icon icon-cloud" title="Google Cloud & AWS"><i
+                                class="fa-solid fa-cloud"></i></div>
+                        <div class="floating-tech-icon icon-database" title="Firebase, Firestore & Pinecone"><i
+                                class="fa-solid fa-database"></i></div>
+                        <div class="floating-tech-icon icon-code" title="Full Stack Engineering"><i
+                                class="fa-solid fa-code"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="arrows">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">Professional Profile</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info-panel scroll-reveal-left">
+                        <h3>Leading Engineering Teams & Delivering AI Innovation</h3>
+                        <p class="about-highlight">
+                            Technical Team Lead with 13+ years of experience building enterprise software across
+                            AI/Generative AI, backend systems, cloud infrastructure, and SaaS platforms.
+                        </p>
+                        <p>
+                            My background spans hands-on Python and PHP development through to leading engineering teams
+                            of up to 8 developers, owning architecture decisions, sprint planning, and production
+                            delivery. I have designed and shipped AI chatbot and RAG-based knowledge retrieval systems
+                            using OpenAI, LangChain, and Pinecone, alongside CRM, HR, banking, ATS, and multi-tenant
+                            SaaS platforms.
+                        </p>
+                        <p>
+                            Comfortable working across the stack, from API and database design to client-facing
+                            requirement discussions and technical decision-making, with a strong focus on clean
+                            architecture, performance optimization, and automation.
+                        </p>
+
+                        <div class="leadership-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-users-gear"></i></div>
+                                <div class="highlight-text">
+                                    <h4>Technical Leadership & Team Mentoring</h4>
+                                    <p>Managed and mentored teams of up to 8 developers, overseeing code quality,
+                                        delivery timelines, sprint planning, and architectural standards.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <div class="highlight-text">
+                                    <h4>Generative AI & Cloud Architecture</h4>
+                                    <p>Architected RAG platforms, vector search engines (Pinecone), OCR document
+                                        intelligence pipelines, and serverless architectures (Cloud Run, Cloud
+                                        Functions, Firebase).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-philosophies scroll-reveal-right">
+                        <div class="glass-card philosophy-card">
+                            <div class="card-icon"><i class="fa-solid fa-compass"></i></div>
+                            <h4>Professional Philosophy</h4>
+                            <p>I believe in building clean, decoupled, and testable codebases that are easy to maintain
+                                and scale. I strive to automate redundant processes so engineering focus stays firmly on
+                                high-value business innovation and robust system design.</p>
+                        </div>
+                        <div class="glass-card philosophy-card">
+                            <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <h4>Key Accomplishments & Recognition</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check"></i> <strong>Employee of the Year Award</strong>
+                                    — Webuters Technologies</li>
+                                <li><i class="fa-solid fa-circle-check"></i> <strong>Best Coding Superstar
+                                        Award</strong> for engineering excellence</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Delivered 50+ enterprise systems across HR,
+                                    SaaS, Banking, and AI domains</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Active Kaggle contributor with
+                                    international client exposure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container stats-grid">
+                <div class="stat-card glass-card scroll-reveal-fade">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div class="stat-number" data-target="13">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Years IT Experience</div>
+                </div>
+
+                <div class="stat-card glass-card scroll-reveal-fade" style="animation-delay: 0.1s;">
+                    <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+
+                <div class="stat-card glass-card scroll-reveal-fade" style="animation-delay: 0.2s;">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Engineers Mentored</div>
+                </div>
+
+                <div class="stat-card glass-card scroll-reveal-fade" style="animation-delay: 0.3s;">
+                    <div class="stat-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">AI Solutions Built</div>
+                </div>
+
+                <div class="stat-card glass-card scroll-reveal-fade" style="animation-delay: 0.4s;">
+                    <div class="stat-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">APIs Developed</div>
+                </div>
+
+                <div class="stat-card glass-card scroll-reveal-fade" style="animation-delay: 0.5s;">
+                    <div class="stat-icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-plus">%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">Technical Arsenal</span>
+                    <h2 class="section-title">Core Competencies</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- AI & LLM Skills -->
+                    <div class="skills-category-card glass-card scroll-reveal-fade">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>AI / Generative AI</h3>
+                        </div>
+                        <div class="skills-bars-container">
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>OpenAI & Gemini APIs</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>LangChain & RAG Architecture</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Pinecone Vector Search & Embeddings</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Prompt Engineering, Vertex AI & NLP</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Frameworks -->
+                    <div class="skills-category-card glass-card scroll-reveal-fade">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skills-bars-container">
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Python (Flask, Django)</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>PHP (Laravel, CodeIgniter)</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>MySQL, PostgreSQL & DynamoDB</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Firestore & Firebase Realtime DB</span>
+                                    <span>94%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="94%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Infrastructure -->
+                    <div class="skills-category-card glass-card scroll-reveal-fade">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cloud"></i>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <div class="skills-bars-container">
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>GCP (Cloud Run, Cloud Functions)</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Firebase & Cloud Storage</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>AWS (S3, EC2, IAM)</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Docker, Git, CI/CD Pipelines</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APIs & Enterprise -->
+                    <div class="skills-category-card glass-card scroll-reveal-fade">
+                        <div class="category-header">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                            <h3>APIs & Integrations</h3>
+                        </div>
+                        <div class="skills-bars-container">
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>REST API Design & Architecture</span>
+                                    <span>96%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="96%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Salesforce CRM Integration</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>OAuth 2.0, JWT & IAM Security</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-name-percentage">
+                                    <span>Twilio, Webhooks & Payment Gateways</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">Career Milestone</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline-container">
+
+                    <!-- Webuters Technologies Lead -->
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">April 2014 – Present</div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Technical Team Lead</h3>
+                                <h4 class="company-name"><i class="fa-solid fa-building"></i> Webuters Technologies |
+                                    <span class="location">Noida / Delhi NCR</span></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lead end-to-end delivery of enterprise applications across AI, SaaS, CRM, banking,
+                                    HR, education, and e-commerce domains. Drive architecture discussions, sprint
+                                    planning, client communication, effort estimation, and deployment activities.</p>
+
+                                <h5 class="sub-heading">Key Accomplishments:</h5>
+                                <ul class="timeline-bullets">
+                                    <li>Managed and mentored a team of up to 8 developers, overseeing code quality,
+                                        delivery timelines, and technical standards.</li>
+                                    <li>Architected cloud-native applications using Firebase, Firestore, Cloud Run,
+                                        Cloud Functions, and serverless infrastructure.</li>
+                                    <li>Designed and built AI chatbot solutions using OpenAI, LangChain, and Pinecone
+                                        with Retrieval-Augmented Generation (RAG) for context-aware responses.</li>
+                                    <li>Developed secure, scalable REST APIs supporting thousands of daily transactions.
+                                    </li>
+                                    <li>Reduced manual operational effort by introducing OCR and AI-powered document
+                                        processing workflows.</li>
+                                    <li>Built enterprise integrations with Salesforce, Twilio, AWS S3, IAM, and OAuth.
+                                    </li>
+                                </ul>
+
+                                <div class="timeline-tech-badges">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">OpenAI</span>
+                                    <span class="tech-badge">LangChain</span>
+                                    <span class="tech-badge">Pinecone</span>
+                                    <span class="tech-badge">GCP</span>
+                                    <span class="tech-badge">Firebase</span>
+                                    <span class="tech-badge">Firestore</span>
+                                    <span class="tech-badge">Salesforce</span>
+                                    <span class="tech-badge">Twilio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 89Itworlds Junior Software Engineer -->
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Aug 2013 – Mar 2014</div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Junior Software Engineer</h3>
+                                <h4 class="company-name"><i class="fa-solid fa-building"></i> 89Itworlds | <span
+                                        class="location">Dehradun, India</span></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Contributed to full-stack engineering and development across multiple client
+                                    projects, implementing robust backend logic, database schema design, and seamless
+                                    third-party integrations.</p>
+
+                                <h5 class="sub-heading">Key Project Contributions:</h5>
+                                <ul class="timeline-bullets">
+                                    <li>Contributed to development across key client platforms including CMC, MDS,
+                                        Global Village, CreditShrink, and Genie.</li>
+                                    <li>Implemented core database design, optimized SQL queries, and built custom API
+                                        modules.</li>
+                                    <li>Participated in code reviews, bug fixes, and feature deployments.</li>
+                                </ul>
+
+                                <div class="timeline-tech-badges">
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">REST APIs</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">HTML5 / CSS3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">Portfolio Highlights</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters scroll-reveal-fade">
+                    <button class="filter-btn active" data-filter="all">All Solutions</button>
+                    <button class="filter-btn" data-filter="ai">AI & Generative AI</button>
+                    <button class="filter-btn" data-filter="backend">Backend & SaaS</button>
+                    <button class="filter-btn" data-filter="integrations">Integrations & APIs</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+
+                    <!-- Project 1: OfficeIQ Chatbot -->
+                    <div class="project-card glass-card mix ai scroll-reveal-fade" data-category="ai">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-officeiq.png" alt="OfficeIQ AI Chatbot Platform"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-robot"></i> AI & Generative
+                                    AI</span>
+                            </div>
+                            <h3 class="project-title">Enterprise AI Chatbot Platform (OfficeIQ)</h3>
+                            <p class="project-desc">Designed and implemented an enterprise-grade AI chatbot platform
+                                using Retrieval-Augmented Generation (RAG) for internal business documentation
+                                accessibility.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> Integrated OpenAI models with Pinecone vector search
+                                    for context-aware responses; built scalable APIs and Firebase-triggered workflows.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Significantly improved enterprise knowledge accessibility
+                                    and reduced search overhead across company teams.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenAI</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Pinecone</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Firestore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: RAG Knowledge Assistant -->
+                    <div class="project-card glass-card mix ai scroll-reveal-fade" data-category="ai">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-rag.png" alt="RAG Knowledge Assistant" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-brain"></i> Vector Search &
+                                    RAG</span>
+                            </div>
+                            <h3 class="project-title">RAG-Based Knowledge Assistant</h3>
+                            <p class="project-desc">Built a high-performance knowledge retrieval engine capable of
+                                processing large enterprise document repositories and unstructured data.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> Vector embeddings pipeline, semantic similarity
+                                    search, and contextual AI response generation via prompt engineering.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Enabled instant, hallucination-resistant Q&A across massive
+                                    multi-format corporate archives.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">OpenAI</span>
+                                <span class="tech-tag">Pinecone</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Document Intelligence Platform -->
+                    <div class="project-card glass-card mix backend scroll-reveal-fade" data-category="backend">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-docintel.png" alt="Document Intelligence Platform"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-file-invoice"></i> OCR & Document
+                                    Intelligence</span>
+                            </div>
+                            <h3 class="project-title">Document Intelligence Platform</h3>
+                            <p class="project-desc">Built an automated document extraction platform for GST, Customs,
+                                and government tax documents with OCR-driven workflows.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> Optical Character Recognition (OCR), automated field
+                                    coordinate extraction, and scalable AWS S3 storage workflows.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Drastically reduced manual data entry efforts and
+                                    accelerated processing turnarounds for financial documents.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OCR</span>
+                                <span class="tech-tag">AWS S3</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Resume Parser Platform -->
+                    <div class="project-card glass-card mix ai scroll-reveal-fade" data-category="ai">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-resumeparser.png" alt="Resume Parser Platform" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-user-check"></i> NLP & Talent
+                                    Intelligence</span>
+                            </div>
+                            <h3 class="project-title">Resume Parser Platform</h3>
+                            <p class="project-desc">Built an intelligent NLP-based resume parsing engine capable of
+                                extracting structured candidate data and matching skills to job descriptions.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> Natural Language Processing (NLP), structured schema
+                                    normalization, secure AWS S3 storage, and Firebase authentication.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Automated recruitment workflows and expedited candidate
+                                    screening cycles by 70%.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">AWS S3</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Multi-Tenant SaaS Platform -->
+                    <div class="project-card glass-card mix backend scroll-reveal-fade" data-category="backend">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-saas.png" alt="Multi-Tenant SaaS Platform" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-cloud-sun"></i> Cloud &
+                                    Multi-Tenant SaaS</span>
+                            </div>
+                            <h3 class="project-title">Multi-Tenant SaaS Platform</h3>
+                            <p class="project-desc">Designed an enterprise multi-tenant cloud architecture supporting
+                                multiple corporate clients with isolated databases and centralized API endpoints.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> Secure tenant provisioning, isolated Firestore
+                                    database instances, and automated GCP deployment pipelines.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Improved client onboarding speed and maintenance efficiency
+                                    while guaranteeing strict data tenancy isolation.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">GCP</span>
+                                <span class="tech-tag">Cloud Run</span>
+                                <span class="tech-tag">Firestore</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: CRM & Salesforce Integration Platform -->
+                    <div class="project-card glass-card mix integrations scroll-reveal-fade"
+                        data-category="integrations">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-salesforce.png" alt="Salesforce Integration Platform"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-network-wired"></i> Enterprise
+                                    Integrations & CRM</span>
+                            </div>
+                            <h3 class="project-title">CRM & Salesforce Integration Platform</h3>
+                            <p class="project-desc">Built seamless, bidirectional Salesforce integrations and real-time
+                                customer data synchronization processes.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> OAuth 2.0 authentication, webhook synchronizations,
+                                    automatic error retries, and scheduled batch data pipelines.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Automated customer data exchange, elimination of sync
+                                    discrepancies, and real-time sales pipeline visibility.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Salesforce API</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">OAuth 2.0</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: HR Onboarding Platform -->
+                    <div class="project-card glass-card mix backend scroll-reveal-fade" data-category="backend">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-hronboarding.png" alt="HR Onboarding Platform" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-id-card"></i> HR Tech &
+                                    Security</span>
+                            </div>
+                            <h3 class="project-title">HR Onboarding Platform</h3>
+                            <p class="project-desc">Developed an automated candidate onboarding platform featuring OTP
+                                verification, secure document management, and compliance checks.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> Dynamic onboarding forms, two-factor OTP verification
+                                    systems, and encrypted cloud file handling using AWS S3.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Accelerated new-hire onboarding time, streamlined
+                                    compliance collection, and boosted user experience.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">AWS S3</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Voice & Communication Automation -->
+                    <div class="project-card glass-card mix integrations scroll-reveal-fade"
+                        data-category="integrations">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-twilio.png" alt="Voice Automation Platform" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/deepakadhikari1989" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Source Code"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-link" title="Project Details"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"><i class="fa-solid fa-phone-volume"></i> Telephony &
+                                    Automation</span>
+                            </div>
+                            <h3 class="project-title">Voice & Communication Automation</h3>
+                            <p class="project-desc">Implemented automated IVR responses, SMS alert workflows, and
+                                dynamic customer notification services using Twilio.</p>
+
+                            <div class="project-info-collapse">
+                                <div class="info-block">
+                                    <strong>Key Features:</strong> Webhook call handlers, transactional notification
+                                    pipelines, and multi-channel failover logic.
+                                </div>
+                                <div class="info-block">
+                                    <strong>Impact:</strong> Enabled instant customer engagement, real-time telephony
+                                    monitoring, and reduced drop-off rates.
+                                </div>
+                            </div>
+
+                            <div class="project-techs">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Twilio API</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">Webhooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Kaggle Badges & Verified Credentials Section -->
+        <section id="badges" class="badges-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge"><i class="fa-brands fa-kaggle"></i> Kaggle Recognition</span>
+                    <h2 class="section-title">Kaggle Verified Badges</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="badges-grid">
+
+                    <!-- Badge 1: Python Coder -->
+                    <div class="badge-card glass-card cert-trigger scroll-reveal-fade"
+                        data-img="assets/badges/kaggle-python-coder.png"
+                        data-title="Kaggle Certified - Python Coder Badge">
+                        <div class="badge-img-wrapper">
+                            <img src="assets/badges/kaggle-python-coder.png" alt="Kaggle Python Coder Badge"
+                                class="badge-img">
+                        </div>
+                        <div class="badge-card-content">
+                            <div class="badge-platform"><i class="fa-brands fa-kaggle"></i> Kaggle Verified Credential
+                            </div>
+                            <h3 class="badge-title">Python Coder</h3>
+                            <p class="badge-desc">Awarded for demonstrating verified hands-on Python programming
+                                expertise, clean script structuring, and data science algorithm execution on Kaggle.</p>
+                            <span class="badge-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Badge 2: Code Forker -->
+                    <div class="badge-card glass-card cert-trigger scroll-reveal-fade"
+                        data-img="assets/badges/kaggle-code-forker.png"
+                        data-title="Kaggle Certified - Code Forker Badge" style="animation-delay: 0.15s;">
+                        <div class="badge-img-wrapper">
+                            <img src="assets/badges/kaggle-code-forker.png" alt="Kaggle Code Forker Badge"
+                                class="badge-img">
+                        </div>
+                        <div class="badge-card-content">
+                            <div class="badge-platform"><i class="fa-brands fa-kaggle"></i> Kaggle Verified Credential
+                            </div>
+                            <h3 class="badge-title">Code Forker</h3>
+                            <p class="badge-desc">Earned through active collaborative code development, notebook
+                                forking, open-source AI community contributions, and algorithmic enhancements.</p>
+                            <span class="badge-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Badge 3: 1 Year on Kaggle -->
+                    <div class="badge-card glass-card cert-trigger scroll-reveal-fade"
+                        data-img="assets/badges/kaggle-1-year.png"
+                        data-title="Kaggle Certified - 1 Year on Kaggle Milestone" style="animation-delay: 0.3s;">
+                        <div class="badge-img-wrapper">
+                            <img src="assets/badges/kaggle-1-year.png" alt="1 Year on Kaggle Badge" class="badge-img">
+                        </div>
+                        <div class="badge-card-content">
+                            <div class="badge-platform"><i class="fa-brands fa-kaggle"></i> Kaggle Verified Credential
+                            </div>
+                            <h3 class="badge-title">1 Year on Kaggle</h3>
+                            <p class="badge-desc">Milestone credential honoring 1+ year of active participation, dataset
+                                exploration, machine learning experiments, and continuous engagement in the Kaggle AI
+                                ecosystem.</p>
+                            <span class="badge-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education Section -->
+        <section class="cert-edu-section">
+            <div class="container cert-edu-grid">
+
+                <!-- Certifications (Left Grid Panel) -->
+                <div class="certifications-panel scroll-reveal-left">
+                    <div class="section-header">
+                        <span class="subtitle-badge">Credentials</span>
+                        <h2 class="section-title">Certifications & Honors</h2>
+                        <div class="section-underline"></div>
+                    </div>
+
+                    <div class="certifications-list">
+                        <div class="certification-card glass-card cert-trigger" style="cursor: pointer;"
+                            data-img="assets/employee-of-the-month.png"
+                            data-title="Employee of the Month / Year Certificate - Webuters Technologies">
+                            <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                            <div class="cert-details">
+                                <h3>Employee of the Month / Year Award</h3>
+                                <p class="issuer">Webuters Technologies (Outstanding Performance)</p>
+                                <span class="badge-tag"><i class="fa-solid fa-image"></i> Click to View
+                                    Certificate</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-card glass-card">
+                            <div class="cert-icon"><i class="fa-solid fa-star"></i></div>
+                            <div class="cert-details">
+                                <h3>Best Coding Superstar Award</h3>
+                                <p class="issuer">Webuters Technologies</p>
+                                <span class="badge-tag">Technical Excellence</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-card glass-card">
+                            <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                            <div class="cert-details">
+                                <h3>Python Certification</h3>
+                                <p class="issuer">Udemy Professional Credentials</p>
+                                <span class="badge-tag">Verified Coursework</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-card glass-card">
+                            <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="cert-details">
+                                <h3>Python Full Stack Certification</h3>
+                                <p class="issuer">Udemy Professional Credentials</p>
+                                <span class="badge-tag">Advanced Engineering</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-card glass-card">
+                            <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+                            <div class="cert-details">
+                                <h3>Additional Cloud & AI Certifications</h3>
+                                <p class="issuer">Google Cloud Platform & AI Ecosystems</p>
+                                <span class="badge-tag">Available Upon Request</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education (Right Grid Panel) -->
+                <div class="education-panel scroll-reveal-right">
+                    <div class="section-header">
+                        <span class="subtitle-badge">Academic Pathway</span>
+                        <h2 class="section-title">Education</h2>
+                        <div class="section-underline"></div>
+                    </div>
+
+                    <div class="edu-timeline">
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-meta">
+                                <h3 class="degree">Master of Computer Applications (MCA)</h3>
+                                <p class="university"><i class="fa-solid fa-graduation-cap"></i> Uttarakhand Technical
+                                    University</p>
+                            </div>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-meta">
+                                <h3 class="degree">Bachelor of Computer Applications (BCA)</h3>
+                                <p class="university"><i class="fa-solid fa-graduation-cap"></i> Kumaun University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">Industry Feedback</span>
+                    <h2 class="section-title">Client & Colleague Reviews</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Testimonial Slider Wrapper -->
+                <div class="testimonial-slider-container scroll-reveal-fade">
+                    <div class="testimonial-slider" id="testimonial-slider">
+
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Deepak is an outstanding Technical Lead. He steered our cloud migration and generative
+                                AI integration projects flawlessly. His ability to lead a team of engineers while
+                                remaining deeply involved in writing optimized code is highly impressive. The OfficeIQ
+                                platform has changed the way our teams access business intelligence."
+                            </p>
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                <div>
+                                    <h4 class="reviewer-name">Sarah Jenkins</h4>
+                                    <p class="reviewer-title">VP of Engineering, FinTech Corp</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Deepak's architecture solutions for RAG and Pinecone database integrations solved our
+                                parsing latency issues immediately. He doesn't just manage; he is a stellar solution
+                                architect who explains complex machine learning concepts and cloud pipelines to
+                                executive stakeholders in a clear, digestible manner."
+                            </p>
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                <div>
+                                    <h4 class="reviewer-name">Rajesh Kumar</h4>
+                                    <p class="reviewer-title">CTO, HealthCloud Systems</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Having worked alongside Deepak for over two years, I can testify to his technical depth
+                                and leadership capabilities. He is highly systematic with sprint goals and keeps
+                                standard operations fully automated. He earned Employee of the Year for a reason!"
+                            </p>
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                <div>
+                                    <h4 class="reviewer-name">David Miller</h4>
+                                    <p class="reviewer-title">Director of Product, RetailFlow SaaS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev-arrow" id="slider-prev" aria-label="Previous Slide"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="slider-dots"></div>
+                        <button class="slider-arrow next-arrow" id="slider-next" aria-label="Next Slide"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">Get in Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Coordinates -->
+                    <div class="contact-info scroll-reveal-left">
+                        <h3>Let's collaborate on AI & Cloud initiatives</h3>
+                        <p>Whether you're looking for architectural guidance, looking to build generative AI solutions,
+                            or seeking a technical leader for enterprise development, drop me a message.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-card glass-card">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span>Send an Email</span>
+                                    <a href="mailto:deepuadhikari12@gmail.com">deepuadhikari12@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card glass-card">
+                                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="method-details">
+                                    <span>Call / WhatsApp</span>
+                                    <a href="tel:+919899985910">+91-9899985910</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card glass-card">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="method-details">
+                                    <span>LinkedIn Profile</span>
+                                    <a href="https://linkedin.com/in/deepak-adhikari-6816ba249" target="_blank"
+                                        rel="noopener noreferrer">linkedin.com/in/deepak-adhikari-6816ba249</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card glass-card">
+                                <div class="method-icon"><i class="fa-solid fa-globe"></i></div>
+                                <div class="method-details">
+                                    <span>Portfolio Website</span>
+                                    <a href="https://deepakadhikari1989.github.io/portfolio" target="_blank"
+                                        rel="noopener noreferrer">deepakadhikari1989.github.io/portfolio</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card glass-card">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="method-details">
+                                    <span>Current Location</span>
+                                    <p>Delhi, India (Noida / Delhi NCR)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Mockup Panel -->
+                        <div class="map-placeholder-card glass-card">
+                            <div class="map-content">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <h4>Interactive Map View</h4>
+                                <p>Noida / Delhi NCR Region, India</p>
+                                <a href="https://maps.google.com/?q=Delhi,India" target="_blank"
+                                    rel="noopener noreferrer" class="btn-secondary btn-sm">Open in Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel glass-card scroll-reveal-right">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required placeholder=" ">
+                                    <label for="email">Your Email</label>
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                                <i class="fa-solid fa-circle-info input-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Message details...</label>
+                                <i class="fa-solid fa-message input-icon"></i>
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-submit">
+                                <span class="submit-text">Send Message</span>
+                                <span class="submit-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+
+                            <!-- Success Notification Modal Overlay inside panel -->
+                            <div class="form-success-overlay" id="form-success-overlay">
+                                <div class="success-message">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h4>Message Dispatched!</h4>
+                                    <p>Thank you for reaching out. Deepak will get back to you shortly.</p>
+                                    <button type="button" class="btn-secondary btn-sm"
+                                        id="close-success-btn">Dismiss</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-tag">&lt;</span>
+                    <span class="logo-bold">Deepak</span><span class="logo-light">.A</span>
+                    <span class="logo-tag">/&gt;</span>
+                </a>
+                <p class="footer-tagline">Architecting intelligent software systems and scaling engineering teams since
+                    2013.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Access</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials-column">
+                <h4>Digital Coordinates</h4>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/deepak-adhikari-6816ba249" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/deepakadhikari1989" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:deepuadhikari12@gmail.com" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+919899985910" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <p class="footer-note">Email: deepuadhikari12@gmail.com | Phone: +91-9899985910</p>
+                <p class="footer-note">Built with pure vanilla HTML5, CSS3, and JavaScript.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Deepak Adhikari. All Rights Reserved.</p>
+                <p><a href="https://deepakadhikari1989.github.io/portfolio" target="_blank" rel="noopener noreferrer"
+                        style="color: var(--accent-cyan);">deepakadhikari1989.github.io/portfolio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <svg class="progress-ring" width="46" height="46">
+            <circle class="progress-ring__circle" stroke="var(--cyan-glow)" stroke-width="3" fill="transparent" r="20"
+                cx="23" cy="23" />
+        </svg>
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Certificate & Badge Lightbox Modal -->
+    <div class="cert-modal" id="cert-modal">
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" id="cert-modal-close" aria-label="Close modal">&times;</button>
+            <img src="" alt="Verified Credential" class="cert-modal-img" id="cert-modal-img">
+            <div class="cert-modal-footer">
+                <span class="cert-modal-title" id="cert-modal-title">Verified Credential</span>
+                <span class="badge-tag"><i class="fa-solid fa-certificate"></i> Verified Credential</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
